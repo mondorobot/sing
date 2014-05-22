@@ -1,0 +1,25 @@
+<div class="locations-index">
+  <h2>Locations</h2>
+  <div class="actions">
+    <a href="" class="btn btn-primary" ng-click="addNew()">new</a>
+    <a href="" class="btn btn-success" ng-click="save()">save</a>
+  </div>
+  <table class="table table-striped">
+    <tr>
+      <th>Area</th>
+      <th>Region</th>
+      <th>Postal Code</th>
+    </tr>
+    <tr ng-repeat="location in locations">
+      <td>
+        {{ location.area }}
+      </td>
+      <td>
+        {{ location.stateProvince }}
+      </td>
+      <td>
+        {{ location.zip }}
+      </td>
+    </tr>
+  </table>
+</div>

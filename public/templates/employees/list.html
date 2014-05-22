@@ -1,0 +1,39 @@
+<div class="employees-index">
+  <h2>Employees</h2>
+  <div class="actions">
+    <a href="" class="btn btn-primary" ui-sref="auth.employees_new">new</a>
+    <a href="" class="btn btn-success" ng-click="save()">save</a>
+  </div>
+  <table class="table table-striped">
+    <tr>
+      <th>Location</th>
+      <th>Name</th>
+      <th>EMail</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
+    </tr>
+    <tr ng-repeat="employee in employees">
+      <td>
+        <select>
+          <option ng-repeat="location in locations">{{ location.area }}</option>
+        </select>
+      </td>
+      <td>
+        <input type="text" ng-model="employee.name">
+      </td>
+      <td>
+        <input type="text" ng-model="employee.email">
+      </td>
+      <td>
+        <input type="text" ng-model="employee.city">
+      </td>
+      <td>
+        <input type="text" ng-model="employee.state">
+      </td>
+      <td>
+        <input type="text" ng-model="employee.postalCode" zipcode-input="">
+      </td>
+    </tr>
+  </table>
+</div>

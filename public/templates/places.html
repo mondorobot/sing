@@ -1,0 +1,26 @@
+<div class="places-index">
+  <h2>Places</h2>
+  <div class="actions">
+    <a href="" class="btn btn-primary" ng-click="addNew()">new</a>
+    <a href="" class="btn btn-success" ng-click="save()">save</a>
+  </div>
+  <table class="table table-striped">
+    <tr>
+      <th>Name</th>
+      <th>ISO2</th>
+      <th>ISO3</th>
+    </tr>
+    <tr ng-repeat="place in places">
+      <td>
+        {{ place.name }}
+      </td>
+      <td>
+        {{ place.iso2 }}
+      </td>
+      <td>
+        {{ place.iso3 }}
+      </td>
+    </tr>
+  </table>
+</div>
+

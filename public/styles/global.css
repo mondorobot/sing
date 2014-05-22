@@ -1,0 +1,11 @@
+body {
+  padding-top: 75px;
+}
+
+table input {
+  width: 100%;
+}
+
+.actions {
+  padding: 10px 0;
+}

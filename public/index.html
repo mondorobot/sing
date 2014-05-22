@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mycrm">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <title>My CRM</title>
+
+    <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="/styles/global.css">
+  </head>
+
+  <body>
+
+    <div ng-controller="MainController">
+      <div ui-view></div>
+    </div>
+
+    <script src="/components/jquery/dist/jquery.min.js"></script>
+    <script src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="/components/angular/angular.js"></script>
+    <script type="text/javascript" src="/components/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script type="text/javascript" src="/js/app.js"></script>
+    <script type="text/javascript" src="/js/routes.js"></script>
+    <script type="text/javascript" src="/js/services/_init.js"></script>
+    <script type="text/javascript" src="/js/filters/_init.js"></script>
+    <script type="text/javascript" src="/js/directives/_init.js"></script>
+    <script type="text/javascript" src="/js/controllers/_init.js"></script>
+
+    <script type="text/javascript" src="/js/services/places_api.js"></script>
+    <script type="text/javascript" src="/js/services/locations_api.js"></script>
+    <script type="text/javascript" src="/js/services/employees_api.js"></script>
+    <script type="text/javascript" src="/js/services/auth_service.js"></script>
+    <script type="text/javascript" src="/js/filters/zipcode.js"></script>
+    <script type="text/javascript" src="/js/directives/zipcode_input.js"></script>
+    <script type="text/javascript" src="/js/controllers/layout.js"></script>
+    <script type="text/javascript" src="/js/controllers/main.js"></script>
+    <script type="text/javascript" src="/js/controllers/nav.js"></script>
+    <script type="text/javascript" src="/js/controllers/login.js"></script>
+    <script type="text/javascript" src="/js/controllers/index.js"></script>
+    <script type="text/javascript" src="/js/controllers/employees.js"></script>
+    <script type="text/javascript" src="/js/controllers/locations.js"></script>
+    <script type="text/javascript" src="/js/controllers/places.js"></script>
+  </body>
+</html>
+
